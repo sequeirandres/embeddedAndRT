@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.5)
+project(bare-metal-scheduler)
+
+# C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC -fPIE")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -fPIE -Wno-deprecated-declarations")
+
+add_subdirectory(src)
