@@ -16,7 +16,8 @@ add_executable(hello_world
     src/main.c
 )
 
-add_library(FreeRTOS STATIC FreeRTOS-Kernel/croutine.c
+add_library(FreeRTOS STATIC 
+    #FreeRTOS-Kernel/croutine.c
     FreeRTOS-Kernel/event_groups.c
     FreeRTOS-Kernel/list.c
     FreeRTOS-Kernel/queue.c
@@ -24,10 +25,10 @@ add_library(FreeRTOS STATIC FreeRTOS-Kernel/croutine.c
     FreeRTOS-Kernel/tasks.c
     FreeRTOS-Kernel/timers.c
 
-    FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c
-    FreeRTOS-Kernel/portable/GCC/ARM_CM0/portasm.c
-    FreeRTOS-Kernel/portable/MemMang/heap_4.c
-    src/IdleMemory.c
+    # FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c
+    # FreeRTOS-Kernel/portable/GCC/ARM_CM0/portasm.c
+    FreeRTOS-Kernel/portable/MemMang/heap_3.c
+    src/port.c
 )
 
 target_include_directories(FreeRTOS PUBLIC FreeRTOS-Kernel/include src/ FreeRTOS-Kernel/portable/GCC/ARM_CM0)
