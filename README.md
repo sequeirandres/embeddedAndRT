@@ -14,3 +14,5 @@ Share and contribute with Pull requests
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2cb190ed-d5c3-42f3-a765-9e20b606a7c3
 
+# Example 2 - FreeRTOS 
+
