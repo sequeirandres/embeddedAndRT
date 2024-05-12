@@ -9,3 +9,8 @@ See each sub folder
 
 # Contribute
 Share and contribute with Pull requests
+
+# Example 1 - led blink 
+
+https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2cb190ed-d5c3-42f3-a765-9e20b606a7c3
+
