@@ -20,3 +20,5 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/87c48b9c-f57a-460
 
 # Example 3 - FreeRTOS - VsemaphoreCreateBinary 
 
+https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2968966c-73c3-4f42-ab02-ae6689a1342b
+
