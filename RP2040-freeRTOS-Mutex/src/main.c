@@ -115,7 +115,7 @@ int main(void)
 	
 	if(xMutex != NULL)
 	{
-	    xTaskCreate(vTask_blink1,TASK_NAME_1, UX_STACK_SIZE, NULL, IDLE_PRIORITY_TASK_1, &xHandle1);
+	xTaskCreate(vTask_blink1,TASK_NAME_1, UX_STACK_SIZE, NULL, IDLE_PRIORITY_TASK_1, &xHandle1);
     	xTaskCreate(vTask_blink2,TASK_NAME_2, UX_STACK_SIZE, NULL, IDLE_PRIORITY_TASK_2, &xHandle2);
     	vTaskStartScheduler();
 	}
