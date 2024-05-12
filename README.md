@@ -14,5 +14,7 @@ Share and contribute with Pull requests
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2cb190ed-d5c3-42f3-a765-9e20b606a7c3
 
-# Example 2 - FreeRTOS 
+# Example 2 - FreeRTOS - blink 
+
+https://github.com/sequeirandres/embeddedAndRT/assets/72326236/87c48b9c-f57a-4607-b1f0-3886226fd7d1
 
