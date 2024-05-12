@@ -27,7 +27,9 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2968966c-73c3-4f4
 
 ## Example 4- FreeRTOS - VsemaphoreMutex 
 
-https://github.com/sequeirandres/embeddedAndRT/assets/72326236/ff59a521-ea16-46be-9e84-d588f6397fca
+https://github.com/sequeirandres/embeddedAndRT/assets/72326236/8c550f9a-a94d-4def-8f44-966df8f7735d
+
+
 
 
 
