@@ -25,10 +25,11 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/87c48b9c-f57a-460
 
 [freeRTOS Blink code (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Blink/src/main.c)
 
-
 ## Example 3 - FreeRTOS - VsemaphoreCreateBinary 
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2968966c-73c3-4f42-ab02-ae6689a1342b
+
+[freeRTOS semaphore (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-semaphore/src/main.c)
 
 ## Example 4- FreeRTOS - VsemaphoreMutex 
 
