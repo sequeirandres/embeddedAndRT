@@ -29,6 +29,7 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2968966c-73c3-4f4
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/8c550f9a-a94d-4def-8f44-966df8f7735d
 
+![Code](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Mutex/src/main.c)
 
 
 
