@@ -13,6 +13,9 @@ Share and contribute with Pull requests
 ## RP2040 - Pin Out
 ![RP2040-PINOUT](Datasheet/RP2040PinOut.png)
 
+## Debug 
+[Link to debug](https://www.digikey.com/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0)
+
 ## Example 1 - led blink 
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2cb190ed-d5c3-42f3-a765-9e20b606a7c3
@@ -36,6 +39,7 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/2968966c-73c3-4f4
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/8c550f9a-a94d-4def-8f44-966df8f7735d
 
 [Mutex Code (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Mutex/src/main.c)
+
 
 
 
