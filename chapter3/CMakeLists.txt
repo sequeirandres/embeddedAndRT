@@ -20,8 +20,13 @@ add_executable(hello_driver
     src/driver.c
 )
 
+add_executable(hello_multicore
+    src/multicore.c
+)
+
 target_compile_definitions(hello_world  PRIVATE PICO_MALLOC_PANIC=0)
 target_compile_definitions(hello_driver PRIVATE PICO_MALLOC_PANIC=0)
+target_compile_definitions(hello_multicore PRIVATE PICO_MALLOC_PANIC=0)
 
 add_library(FreeRTOS STATIC 
     #FreeRTOS-Kernel/croutine.c
@@ -52,6 +57,11 @@ target_link_libraries(hello_driver PRIVATE
     hardware_irq
 )
 
+target_link_libraries(hello_multicore PRIVATE
+    FreeRTOS
+    pico_stdlib
+    pico_multicore
+)
 
 pico_add_extra_outputs(hello_world)
 pico_enable_stdio_usb(hello_world 1)
@@ -60,3 +70,7 @@ pico_enable_stdio_uart(hello_world 0)
 pico_add_extra_outputs(hello_driver)
 pico_enable_stdio_usb(hello_driver 1)
 pico_enable_stdio_uart(hello_driver 0)
+
+pico_add_extra_outputs(hello_multicore)
+pico_enable_stdio_usb(hello_multicore 1)
+pico_enable_stdio_uart(hello_multicore 0)
