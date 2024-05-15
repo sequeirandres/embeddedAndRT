@@ -7,8 +7,11 @@ include(pico-sdk/external/pico_sdk_import.cmake)
 project(hello_rtos_world VERSION "0.6.4" LANGUAGES C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -DDEBUG_MODE")
 
+add_subdirectory(system)
 include_directories(src)
+
 
 pico_sdk_init()
 
@@ -24,9 +27,14 @@ add_executable(hello_multicore
     src/multicore.c
 )
 
+add_executable(hello_crash
+    src/crash.c
+)
+
 target_compile_definitions(hello_world  PRIVATE PICO_MALLOC_PANIC=0)
 target_compile_definitions(hello_driver PRIVATE PICO_MALLOC_PANIC=0)
 target_compile_definitions(hello_multicore PRIVATE PICO_MALLOC_PANIC=0)
+target_compile_definitions(hello_crash PRIVATE PICO_MALLOC_PANIC=1)
 
 add_library(FreeRTOS STATIC 
     #FreeRTOS-Kernel/croutine.c
@@ -63,6 +71,12 @@ target_link_libraries(hello_multicore PRIVATE
     pico_multicore
 )
 
+target_link_libraries(hello_crash PRIVATE
+    FreeRTOS
+    pico_stdlib
+    system
+)
+
 pico_add_extra_outputs(hello_world)
 pico_enable_stdio_usb(hello_world 1)
 pico_enable_stdio_uart(hello_world 0)
@@ -74,3 +88,7 @@ pico_enable_stdio_uart(hello_driver 0)
 pico_add_extra_outputs(hello_multicore)
 pico_enable_stdio_usb(hello_multicore 1)
 pico_enable_stdio_uart(hello_multicore 0)
+
+pico_add_extra_outputs(hello_crash)
+pico_enable_stdio_usb(hello_crash 1)
+pico_enable_stdio_uart(hello_crash 0)
