@@ -283,7 +283,6 @@ int main() {
 #endif
 
 #if 1
-
 // Two publishers tasks messaging with a Queue to a Consumer task
 QueueHandle_t xQueue;
 void vTaskPublisher( void * pvParameters ) {
