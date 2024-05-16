@@ -40,6 +40,12 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/8c550f9a-a94d-4de
 
 [freeRTOS Mutex (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Mutex/src/main.c)
 
+## Example 5- FreeRTOS - Queue - QueueSend & QueueReceive
+
+
+
+
+
 
 
 
