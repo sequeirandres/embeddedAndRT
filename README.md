@@ -44,8 +44,7 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/8c550f9a-a94d-4de
 
 https://github.com/sequeirandres/embeddedAndRT/assets/72326236/e16176be-1ba7-49ff-b69a-2f1d2dbe145f
 
-
-
+[freeRTOS Queue (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Queue/src/main.c)
 
 
 
