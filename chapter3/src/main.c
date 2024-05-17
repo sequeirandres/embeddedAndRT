@@ -322,9 +322,32 @@ int main() {
     int tid1 = 1, tid2 = 2, tid3 = 3;
     TaskHandle_t xHandle1 = NULL, xHandle2 = NULL, xHandle3 = NULL;
     BaseType_t xReturned1 = xTaskCreate(vTaskConsumer, "Consumer Task "  , 512, (void *) &tid1, 3, &xHandle1);
-    BaseType_t xReturned2 = xTaskCreate(vTaskPublisher, "Publiser Task 1", 512, (void *) &tid2, 2, &xHandle2);
-    BaseType_t xReturned3 = xTaskCreate(vTaskPublisher, "Publiser Task 2", 512, (void *) &tid3, 2, &xHandle3);  
+    BaseType_t xReturned2 = xTaskCreate(vTaskPublisher, "Publisher Task 1", 512, (void *) &tid2, 2, &xHandle2);
+    BaseType_t xReturned3 = xTaskCreate(vTaskPublisher, "Publisher Task 2", 512, (void *) &tid3, 2, &xHandle3);  
     vTaskStartScheduler();
     __builtin_unreachable();
 }
 #endif
+/*
+int fib(int val) {
+    return val;
+}
+
+typedef struct {
+    char val;
+    int  result;
+} myObject;
+
+void vTaskFib(void * pvParameters) {
+    // int *inVal = (int *)pvParameters;
+    // int *outVal = (int *)pvParameters + 1;
+    int cnt =0;
+    for( ;; ) {
+        
+      int val  = fib(cnt++);
+      printf("fib de %d es %d\n", cnt, val);
+    }
+}
+
+ BaseType_t xReturned1 = xTaskCreate(vTaskConsumer, "Task "  , 1024, (void *) &tid1, 3, &xHandle1);
+*/

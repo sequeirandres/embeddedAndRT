@@ -18,13 +18,20 @@ void vTaskRunner( void * pvParameters ) {
 }
 
 void core1_main() {
-    /* Create task */
+    // /* Create task */
+    #if 0
     int coreTid[2] = {1, 2};
     TaskHandle_t xHandle2 = NULL;
     BaseType_t xReturned2 = xTaskCreate(vTaskRunner, "Runner Task", 512, (void *) &coreTid, 3, &xHandle2);
 
     vTaskStartScheduler();
     __builtin_unreachable();
+    #else 
+    for (;;) {
+        printf("Core %d, TaskId %d running\n", coreTid[0], coreTid[1]);
+        sleep_ms(1000);
+    }
+    #endif
 }
 
 int main() {
@@ -36,7 +43,7 @@ int main() {
     BaseType_t xReturned1 = xTaskCreate(vTaskRunner, "Runner Task", 512, (void *) &coreTid, 3, &xHandle1);
 
     //Start seconc core
-    //multicore_launch_core1(core1_main);
+    multicore_launch_core1(core1_main);
 
     vTaskStartScheduler();
     __builtin_unreachable();
