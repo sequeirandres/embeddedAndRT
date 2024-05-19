@@ -46,6 +46,6 @@ https://github.com/sequeirandres/embeddedAndRT/assets/72326236/e16176be-1ba7-49f
 
 [freeRTOS Queue (main.c)](https://github.com/sequeirandres/embeddedAndRT/blob/main/RP2040-freeRTOS-Queue/src/main.c)
 
-
+## Example 6- Multicore 
 
 
